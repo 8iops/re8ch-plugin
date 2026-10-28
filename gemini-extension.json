@@ -1,0 +1,11 @@
+{
+  "name": "re8ch-plugin",
+  "version": "0.1.0",
+  "description": "Use tools authorized for your RE8CH organization through an OAuth-protected MCP connection.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "re8ch": {
+      "httpUrl": "https://tools.service.re8ch.com/tenant/mcp"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "re8ch",
+  "version": "0.1.0",
+  "description": "Use tenant-scoped RE8CH infrastructure and application tools through OAuth-protected MCP.",
+  "author": {
+    "name": "Reachieve LLC",
+    "url": "https://github.com/8iops"
+  },
+  "homepage": "https://github.com/8iops/re8ch-plugin",
+  "repository": "https://github.com/8iops/re8ch-plugin",
+  "license": "MIT",
+  "logo": "assets/logo.svg",
+  "keywords": ["re8ch", "mcp", "infrastructure", "platform", "oauth"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Re8ch",
+        "shortDescription": "Use tools authorized for your RE8CH organization.",
+        "longDescription": "Inspect and operate tenant-scoped RE8CH infrastructure, applications, services and workflows through an OAuth-protected MCP connection.",
+        "developerName": "Reachieve LLC",
+        "category": "Developer Tools",
+        "capabilities": ["Interactive", "Read", "Write", "OAuth", "MCP"],
+        "websiteURL": "https://github.com/8iops/re8ch-plugin",
+        "defaultPrompt": [
+          "Show the capabilities available to my RE8CH organization.",
+          "Inspect the health of my tenant applications."
+        ],
+        "brandColor": "#FF5A36"
+      }
+    }
+  }
+}

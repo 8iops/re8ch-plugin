@@ -1,0 +1,17 @@
+name: Validate distribution
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  manifests:
+    runs-on: [self-hosted, Linux, X64, r640, untrusted-build]
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Validate manifests
+        run: python3 scripts/validate.py
